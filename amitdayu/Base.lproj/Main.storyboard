@@ -241,6 +241,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="outputLabel" destination="5Fb-rX-Adj" id="b5O-nP-IJw"/>
                         <outlet property="textField" destination="hgL-bh-NWB" id="GGS-dY-g7S"/>
                     </connections>
                 </viewController>

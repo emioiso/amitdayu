@@ -8,6 +8,7 @@
 import UIKit
 
 class ChargeViewController: UIViewController {
+    @IBOutlet weak var outputLabel: UILabel!
     
     @IBOutlet weak var textField: UITextField!
     
@@ -24,7 +25,13 @@ class ChargeViewController: UIViewController {
                 if let text = textField.text {
                     // 文字列が "amidayuiiyudana" と一致するか確認
                     if text == "amidayuiiyudana" {
-                        print("成功") // 一致した場合にコンソールに出力
+                        print("成功") //一致した場合にコンソールに出力
+                        // ラベルの現在の値を取得して、10を加算
+                                        if let currentText = outputLabel.text, let currentValue = Int(currentText) {
+                                            outputLabel.text = String(currentValue + 10)
+                                        } else {
+                                            outputLabel.text = "10" // ラベルが空だった場合
+                                        }
                     } else {
                         print("不一致") // 一致しない場合
                     }
