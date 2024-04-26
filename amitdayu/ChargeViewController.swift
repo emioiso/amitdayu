@@ -13,7 +13,9 @@ class ChargeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            // Do any additional setup after loading the view.
+        // パスワード入力を黒丸で表示
+        textField.isSecureTextEntry = true
+        // Do any additional setup after loading the view.
        
     }
     @IBAction func btnAction(sender: UIButton){
