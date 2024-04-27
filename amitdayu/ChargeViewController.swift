@@ -40,7 +40,8 @@ class ChargeViewController: UIViewController {
             if let text = textField.text {
                 // 文字列が "amidayuiiyudana" と一致するか確認
                 if text == "amidayuiiyudana" {
-                    print("成功") //一致した場合にコンソールに出力
+                    //一致した場合にコンソールに出力
+                    print("成功")
                     // ラベルの現在の値を取得して、10を加算
                     if let currentText = outputLabel.text, let currentValue = Int(currentText) {
                         outputLabel.text = String(currentValue + 10)
@@ -54,6 +55,8 @@ class ChargeViewController: UIViewController {
                     // テキストフィールドの文字列を消去する
                     textField.text = ""
                 } else {
+                    // テキストフィールドの文字列を消去する
+                    textField.text = ""
                     mistakePassword.text = String("パスワードが間違っています")
                     print("不一致")
                 }
