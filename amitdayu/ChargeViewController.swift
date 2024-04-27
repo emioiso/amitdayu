@@ -6,11 +6,18 @@
 //
 
 import UIKit
+// デリゲートプロトコルの定義
+protocol ChargeViewControllerDelegate: AnyObject {
+    func didUpdateValue(newValue: Int)
+}
 
 class ChargeViewController: UIViewController {
     
     @IBOutlet weak var outputLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
+    
+    // デリゲートプロパティ
+    weak var delegate: ChargeViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +31,9 @@ class ChargeViewController: UIViewController {
         } else {
             // 初期値を設定
             outputLabel.text = "0"
-            
-            
         }
     }
         @IBAction func btnAction(sender: UIButton){
-            
-            
             print(sender.tag)
             // テキストフィールドの内容を取得
             if let text = textField.text {
@@ -41,15 +44,16 @@ class ChargeViewController: UIViewController {
                     if let currentText = outputLabel.text, let currentValue = Int(currentText) {
                         outputLabel.text = String(currentValue + 10)
                     } else {
-                        outputLabel.text = "10" // ラベルが空だった場合
+                        // ラベルが空だった場合
+                        outputLabel.text = "10"
                     }
                     // テキストフィールドの文字列を消去する
                     textField.text = ""
                 } else {
-                    print("不一致") // 一致しない場合
+                    print("不一致")
                 }
             } else {
-                print("テキストフィールドが空") // テキストフィールドが空の場合
+                print("テキストフィールドが空") 
             }
         }
 }
