@@ -12,6 +12,7 @@ protocol ChargeViewControllerDelegate: AnyObject {
 }
 
 class ChargeViewController: UIViewController {
+    @IBOutlet weak var mistakePassword: UILabel!
     
     @IBOutlet weak var outputLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
@@ -43,13 +44,17 @@ class ChargeViewController: UIViewController {
                     // ラベルの現在の値を取得して、10を加算
                     if let currentText = outputLabel.text, let currentValue = Int(currentText) {
                         outputLabel.text = String(currentValue + 10)
+                        // デリゲートを通じて値を伝える
+                        delegate?.didUpdateValue(newValue: currentValue + 10)
                     } else {
                         // ラベルが空だった場合
                         outputLabel.text = "10"
+                        delegate?.didUpdateValue(newValue: 10)
                     }
                     // テキストフィールドの文字列を消去する
                     textField.text = ""
                 } else {
+                    mistakePassword.text = String("パスワードが間違っています")
                     print("不一致")
                 }
             } else {
