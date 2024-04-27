@@ -47,6 +47,8 @@ class ChargeViewController: UIViewController {
                         outputLabel.text = String(currentValue + 10)
                         // デリゲートを通じて値を伝える
                         delegate?.didUpdateValue(newValue: currentValue + 10)
+                        //パスワードが合っている場合、"パスワードが間違っています"という文字列を消去する
+                        mistakePassword.text = String("")
                     } else {
                         // ラベルが空だった場合
                         outputLabel.text = "10"
