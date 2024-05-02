@@ -246,6 +246,15 @@
                                 <color key="textColor" red="0.8862745098" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUi-db-eaf">
+                                <rect key="frame" x="167" y="662" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="wtL-ue-QBu" kind="presentation" identifier="toUseViewController" id="ADW-hg-RgY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zgx-fU-jmD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -316,6 +325,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="ADW-hg-RgY"/>
         <segue reference="k4H-dN-Ic8"/>
     </inferredMetricsTieBreakers>
     <resources>

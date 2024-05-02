@@ -7,6 +7,11 @@
 
 import UIKit
 
+// デリゲートプロトコルの定義
+protocol ChargeViewControllerDelegate: AnyObject {
+    func didUpdateValue(newValue: Int)
+}
+
 class UseViewController: UIViewController {
     
     @IBOutlet weak var valueLabel: UILabel!

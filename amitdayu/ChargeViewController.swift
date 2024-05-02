@@ -6,10 +6,6 @@
 //
 
 import UIKit
-// デリゲートプロトコルの定義
-protocol ChargeViewControllerDelegate: AnyObject {
-    func didUpdateValue(newValue: Int)
-}
 
 class ChargeViewController: UIViewController {
     @IBOutlet weak var mistakePassword: UILabel!
