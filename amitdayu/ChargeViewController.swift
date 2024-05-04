@@ -9,12 +9,11 @@ import UIKit
 
 class ChargeViewController: UIViewController {
     @IBOutlet weak var mistakePassword: UILabel!
-    
     @IBOutlet weak var outputLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     
-    // デリゲートプロパティ
-    weak var delegate: ChargeViewControllerDelegate?
+    // 10の倍数の数値を保持するプロパティ
+    var multipleOfTenValue = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,14 +40,14 @@ class ChargeViewController: UIViewController {
                     // ラベルの現在の値を取得して、10を加算
                     if let currentText = outputLabel.text, let currentValue = Int(currentText) {
                         outputLabel.text = String(currentValue + 10)
-                        // デリゲートを通じて値を伝える
-                        delegate?.didUpdateValue(newValue: currentValue + 10)
+                        // プロパティにも10の倍数の値を保持
+                        multipleOfTenValue = currentValue + 10
                         //パスワードが合っている場合、"パスワードが間違っています"という文字列を消去する
-                        mistakePassword.text = String("")
+                        mistakePassword.text = ""
                     } else {
                         // ラベルが空だった場合
                         outputLabel.text = "10"
-                        delegate?.didUpdateValue(newValue: 10)
+                        multipleOfTenValue = 10
                     }
                     // テキストフィールドの文字列を消去する
                     textField.text = ""
@@ -60,6 +59,15 @@ class ChargeViewController: UIViewController {
                 }
             } else {
                 print("テキストフィールドが空") 
+            }
+        }
+    // UseViewControllerに遷移する際の準備
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "useSegue" {
+                if let useViewController = segue.destination as? UseViewController {
+                    // UseViewControllerのプロパティに10の倍数の値を渡す
+                    useViewController.correct = multipleOfTenValue
+                }
             }
         }
 }

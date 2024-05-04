@@ -7,20 +7,16 @@
 
 import UIKit
 
-// デリゲートプロトコルの定義
-protocol ChargeViewControllerDelegate: AnyObject {
-    func didUpdateValue(newValue: Int)
-}
-
 class UseViewController: UIViewController {
     
     @IBOutlet weak var valueLabel: UILabel!
     
+    // ChargeViewControllerから受け取った値を保持するプロパティ
+    var correct = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    // ChargeViewControllerからの値を受け取るメソッド
-    func updateValue(newValue: Int) {
-        valueLabel.text = String(newValue)
+        // 受け取った値を表示する
+        valueLabel.text = "\(correct)"
     }
 }
