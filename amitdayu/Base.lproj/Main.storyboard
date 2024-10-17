@@ -339,9 +339,9 @@ CLOSE 毎毎週水・木曜日</string>
         <!--Contact View Controller-->
         <scene sceneID="bGW-HT-VNH">
             <objects>
-                <viewController id="Pz7-RD-Rwb" customClass="contactViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Pz7-RD-Rwb" customClass="contactViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bQS-TG-rlc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04x-ob-jVu">
@@ -350,6 +350,13 @@ CLOSE 毎毎週水・木曜日</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お問い合わせ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UT6-gR-f39">
+                                <rect key="frame" x="149" y="119" width="96" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4zg-Ko-ZVk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
