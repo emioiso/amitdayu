@@ -37,12 +37,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="やりたい事リスト"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqe-T9-wJ8">
-                                <rect key="frame" x="141" y="699" width="120" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="お問い合わせ"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bei-Fc-cJc">
                                 <rect key="frame" x="145" y="501" width="104" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,6 +62,15 @@ CLOSE 毎毎週水・木曜日</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqe-T9-wJ8">
+                                <rect key="frame" x="137" y="715" width="120" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="お問い合わせ"/>
+                                <connections>
+                                    <segue destination="Pz7-RD-Rwb" kind="presentation" id="rra-EG-nMW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kqC-Hw-ltP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -333,6 +336,29 @@ CLOSE 毎毎週水・木曜日</string>
             </objects>
             <point key="canvasLocation" x="-366" y="-2117"/>
         </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="bGW-HT-VNH">
+            <objects>
+                <viewController id="Pz7-RD-Rwb" customClass="contactViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bQS-TG-rlc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04x-ob-jVu">
+                                <rect key="frame" x="185" y="119" width="24" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4zg-Ko-ZVk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="of7-Kv-6gh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2269.4656488549617" y="-635.21126760563379"/>
+        </scene>
         <!--Check View Controller-->
         <scene sceneID="7dM-nM-C36">
             <objects>
@@ -393,7 +419,7 @@ CLOSE 毎毎週水・木曜日</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="LQs-BB-cwl"/>
-        <segue reference="3pL-0u-bRG"/>
+        <segue reference="aYc-jc-0Dm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
