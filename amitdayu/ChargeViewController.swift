@@ -61,6 +61,7 @@ class ChargeViewController: UIViewController {
                 print("テキストフィールドが空") 
             }
         }
+    
     // UseViewControllerに遷移する際の準備
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "useSegue" {
