@@ -11,9 +11,9 @@
         <!--View Controller-->
         <scene sceneID="HPh-IT-JCY">
             <objects>
-                <viewController id="B77-O2-akz" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="B77-O2-akz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hSk-t0-Tx1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBh-9q-NXx">
