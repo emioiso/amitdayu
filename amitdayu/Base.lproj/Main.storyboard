@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="B77-O2-akz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hSk-t0-Tx1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBh-9q-NXx">
@@ -122,6 +122,15 @@ CLOSE 毎毎週水・木曜日</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ti-8U-73B">
+                                <rect key="frame" x="35" y="91" width="74" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="〈 back"/>
+                                <connections>
+                                    <segue destination="B77-O2-akz" kind="presentation" id="PNU-g6-pX2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -429,7 +438,7 @@ CLOSE 毎毎週水・木曜日</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="LQs-BB-cwl"/>
-        <segue reference="aYc-jc-0Dm"/>
+        <segue reference="3pL-0u-bRG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
