@@ -332,6 +332,12 @@ CLOSE 毎毎週水・木曜日</string>
                                     <segue destination="wtL-ue-QBu" kind="presentation" identifier="useSegue" id="eOP-eh-5T0"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKh-eL-3ER">
+                                <rect key="frame" x="103" y="409" width="206" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zgx-fU-jmD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -339,11 +345,12 @@ CLOSE 毎毎週水・木曜日</string>
                     <connections>
                         <outlet property="mistakePassword" destination="frt-CQ-kzc" id="fVx-1v-lda"/>
                         <outlet property="outputLabel" destination="5Fb-rX-Adj" id="b5O-nP-IJw"/>
+                        <outlet property="textField" destination="DKh-eL-3ER" id="wkH-zE-xjX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYt-8e-CYG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-366" y="-2117"/>
+            <point key="canvasLocation" x="-367.17557251908397" y="-2117.605633802817"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="bGW-HT-VNH">
@@ -446,9 +453,9 @@ CLOSE 毎毎週水・木曜日</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LQs-BB-cwl"/>
-        <segue reference="3pL-0u-bRG"/>
-        <segue reference="h8a-2I-AIM"/>
+        <segue reference="eOP-eh-5T0"/>
+        <segue reference="k4H-dN-Ic8"/>
+        <segue reference="PNU-g6-pX2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

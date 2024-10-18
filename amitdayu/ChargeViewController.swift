@@ -29,7 +29,7 @@ class ChargeViewController: UIViewController {
             outputLabel.text = "0"
         }
     }
-        @IBAction func btnAction(sender: UIButton){
+        @IBAction func btnAction(_ sender: UIButton){
             print(sender.tag)
             // テキストフィールドの内容を取得
             if let text = textField.text {
