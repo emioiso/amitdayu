@@ -369,6 +369,15 @@ CLOSE 毎毎週水・木曜日</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="https://lin.ee/xGDqGRQ"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WH-Al-bWn">
+                                <rect key="frame" x="29" y="105" width="74" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="〈 back"/>
+                                <connections>
+                                    <segue destination="B77-O2-akz" kind="presentation" id="h8a-2I-AIM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4zg-Ko-ZVk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -439,6 +448,7 @@ CLOSE 毎毎週水・木曜日</string>
     <inferredMetricsTieBreakers>
         <segue reference="LQs-BB-cwl"/>
         <segue reference="3pL-0u-bRG"/>
+        <segue reference="h8a-2I-AIM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
