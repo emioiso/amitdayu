@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		854945892CC164B500D3EFF7 /* contactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854945882CC164B500D3EFF7 /* contactViewController.swift */; };
 		85FFF6E42BD8D81900EE1EC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FFF6E32BD8D81900EE1EC3 /* AppDelegate.swift */; };
 		85FFF6E62BD8D81900EE1EC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FFF6E52BD8D81900EE1EC3 /* SceneDelegate.swift */; };
 		85FFF6E82BD8D81900EE1EC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FFF6E72BD8D81900EE1EC3 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		854945882CC164B500D3EFF7 /* contactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactViewController.swift; sourceTree = "<group>"; };
 		85FFF6E02BD8D81900EE1EC3 /* amitdayu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amitdayu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FFF6E32BD8D81900EE1EC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85FFF6E52BD8D81900EE1EC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				85FFF7012BD8FE1100EE1EC3 /* CheckViewController.swift */,
 				85FFF6FB2BD8FDCE00EE1EC3 /* LogViewController.swift */,
 				85FFF6F92BD8FDB900EE1EC3 /* HomeViewController.swift */,
+				854945882CC164B500D3EFF7 /* contactViewController.swift */,
 				85FFF6EC2BD8D81A00EE1EC3 /* Assets.xcassets */,
 				85FFF6EE2BD8D81A00EE1EC3 /* LaunchScreen.storyboard */,
 				85FFF6F12BD8D81A00EE1EC3 /* Info.plist */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85FFF6E82BD8D81900EE1EC3 /* ViewController.swift in Sources */,
+				854945892CC164B500D3EFF7 /* contactViewController.swift in Sources */,
 				85FFF7022BD8FE1100EE1EC3 /* CheckViewController.swift in Sources */,
 				85FFF6FC2BD8FDCE00EE1EC3 /* LogViewController.swift in Sources */,
 				85FFF6E42BD8D81900EE1EC3 /* AppDelegate.swift in Sources */,
@@ -319,6 +323,7 @@
 				DEVELOPMENT_TEAM = Z8QC62V2F3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = amitdayu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "海浜あみだ湯";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -347,6 +352,7 @@
 				DEVELOPMENT_TEAM = Z8QC62V2F3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = amitdayu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "海浜あみだ湯";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
