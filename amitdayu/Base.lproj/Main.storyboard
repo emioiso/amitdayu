@@ -25,6 +25,18 @@
                                     <segue destination="B77-O2-akz" kind="presentation" id="2zS-DZ-Hxv"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yL2-3B-yKN">
+                                <rect key="frame" x="17" y="168" width="360" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1:3" translatesAutoresizingMaskIntoConstraints="NO" id="rB1-7I-WWe">
+                                        <rect key="frame" x="-44" y="8" width="449" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="me4-e1-ZTh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="oEX-8U-w00"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xkX-Mx-QMI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -32,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyF-Bd-BpO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3025" y="-1311"/>
+            <point key="canvasLocation" x="-3025.1908396946565" y="-1311.267605633803"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HPh-IT-JCY">
@@ -50,12 +62,6 @@
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="3pL-0u-bRG"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfa-no-m85">
-                                <rect key="frame" x="129" y="395" width="136" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="欲しい物リスト"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjM-WY-pT3">
                                 <rect key="frame" x="121" y="438" width="152" height="35"/>
@@ -78,8 +84,17 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="スケジュール"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqe-T9-wJ8">
+                                <rect key="frame" x="137" y="715" width="120" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="お問い合わせ"/>
+                                <connections>
+                                    <segue destination="Pz7-RD-Rwb" kind="presentation" id="rra-EG-nMW"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBT-Jp-79c">
-                                <rect key="frame" x="36" y="180" width="330" height="207"/>
+                                <rect key="frame" x="27" y="183" width="350" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">〒928-1213
 石川県珠洲市野々江町5
@@ -90,15 +105,6 @@ OPEN 14:00-21:00 | CLOSE 毎週水・木曜日</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqe-T9-wJ8">
-                                <rect key="frame" x="137" y="715" width="120" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="お問い合わせ"/>
-                                <connections>
-                                    <segue destination="Pz7-RD-Rwb" kind="presentation" id="rra-EG-nMW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kqC-Hw-ltP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -479,6 +485,7 @@ OPEN 14:00-21:00 | CLOSE 毎週水・木曜日</string>
         <segue reference="2zS-DZ-Hxv"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="1:3" width="1169" height="827"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
