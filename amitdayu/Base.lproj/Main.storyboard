@@ -11,9 +11,9 @@
         <!--Gallery View Controller-->
         <scene sceneID="uxi-O0-Cu9">
             <objects>
-                <viewController id="WBu-74-2jb" customClass="galleryViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="WBu-74-2jb" customClass="galleryViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lma-TO-Y5Z">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uz6-FF-V8A">
