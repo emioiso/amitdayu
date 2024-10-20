@@ -15,6 +15,17 @@
                     <view key="view" contentMode="scaleToFill" id="lma-TO-Y5Z">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uz6-FF-V8A">
+                                <rect key="frame" x="17" y="105" width="74" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="〈 back"/>
+                                <connections>
+                                    <segue destination="B77-O2-akz" kind="presentation" id="2zS-DZ-Hxv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xkX-Mx-QMI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -465,7 +476,7 @@ OPEN 14:00-21:00 | CLOSE 毎週水・木曜日</string>
     <inferredMetricsTieBreakers>
         <segue reference="eOP-eh-5T0"/>
         <segue reference="3pL-0u-bRG"/>
-        <segue reference="PNU-g6-pX2"/>
+        <segue reference="2zS-DZ-Hxv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
