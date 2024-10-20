@@ -18,7 +18,7 @@ class ChargeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // パスワード入力を黒丸で表示
-        textField.isSecureTextEntry = true
+        textField.isSecureTextEntry = false
         
         // 保存された値を読み込む
         let defaults = UserDefaults.standard
